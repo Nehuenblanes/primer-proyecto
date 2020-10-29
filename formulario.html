@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <h1>FORMULARIO</h1>
+    <div class = "formulario">
+    <form action="formu.php" method="POST">
+<table>
+<tr>
+    <td><input type="text" placeholder="Nombre" name="nombre" required> </td>
+</tr>
+<tr>
+    <td><input type="password" placeholder="Contraseña" name="password" required> </td>
+</tr>
+<tr>
+    
+    <TD><input type="radio" name = "genero" value="F" required > FENEMINO 
+        <input type="radio" name = "genero" value="M" required>MASCULINO</TD>
+</tr>
+<tr>
+    
+    <td><input type="email" placeholder="Correo" name = "email" required
+        ></td>
+</tr>
+<tr>
+<td>MATERIA:</td>
+<td>
+<select class= "cuadro" name="materia" required>
+    <option select hidden value="">MATERIAS</option>
+    <option value="MAT">MATEMATICA</option>
+    <option value="FIS">FISICA</option>
+    <option value="ING">INGLES</option>
+    <option value="DAT">DATOS</option>
+    <option value="PRO">PROGRA</option>
+    
+</select>    
+<input type="phone" name = "telefono" placeholder="Deje su numero" required>
+</td>
+</tr>
+<tr>  <td><input type="submit" value="ENVIAR" name = "enviar"></td>
+   
+</tr> 
+</table>
+<a href="index.html"><input type="button" value="MENU">
+    </form>
+   
+</div>
+</body>
+
+
+ 
+    </form>
+  </div>
+</html>

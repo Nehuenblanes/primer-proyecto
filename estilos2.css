@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+      text-align: center;
+        background: #401731;
+        color: #D92378;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+   #tabla{
+    text-align: center;
+     margin: 5% auto;
+     width: 800px;
+   }
+table{
+  margin-top: 8px;
+      background-color: #8C2048;
+      width: 100%;
+     
+      border-collapse: collapse;
+    }
+    td,tr{
+      border: solid 1px black;
+     padding: 5px;
+     
+    }
+    
+    thead{
+      background-color: #401731;;
+      color: #8C2048;
+    }
+    tr:nth-child(even){
+ background-color: #D92378;
+      color: #8C2048;
+    }
+ input[type = button]:hover{
+    transition: .6;
+background: #8C2048;
+color: #D92378;
+}
+input[type = button]{
+color: #8C2048;
+text-align: center;
+margin: auto;
+    border: 1px solid #5864A6;
+    border-radius: 5px;
+    background: none;
+   
+    padding: 13px 10px;
+    font-size: 18px;
+   
+} 
+select[class = "cuadro"] {
+  width: 100%;
+  border: 1px solid #D92378;
+  border-radius: 5px;
+  background: #401731;
+  padding: 6px 15px;
+  box-sizing: border-box;
+  
+  color: #D92378;
+}
+input[type = "text"]{
+  
+  color: #D92378;
+  border-radius: 5px;
+  background: #401731;
+  border: 1px solid #D92378;
+  margin-right: 9px;
+}
+input[type = "submit"]{
+  color: #D92378;
+  border: 1px solid #D92378;
+  background: none;
+  padding: 0 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+input[type = "submit"]:hover{
+  background: #8C2048;
+  color: #D92378;
+  border: 1px solid #D92378;
+  padding: 0 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+
+/*----------------------------------busqueda--------------*/
+.form_search{
+
+ display: flex;
+ float: right;
+ background: initial;
+ 
+ padding: 10px;
+ border-radius: 9px;
+ border: 1px solid #D92378;
+}
