@@ -11,23 +11,21 @@ $usuarios = "SELECT materia from usuario";
     <link rel="stylesheet" href="estilos2.css">
     <body>
         <h1>RESULTADOS</h1>
-        <form action = "buscar_usuario_.php" method= "get" class="form_search"> 
-            PRIMER DATO
+        <form action = "buscar_usuario2_.php" method= "get" class="form_search"> 
+          
 <input type="text" name = "busqueda" id ="busqueda" placehoder = "buscar" required>
 <select class= "cuadro" name=tipo required>
-    <option select hidden value="">DATO</option>
+    <option select hidden value="">DATO 1</option>
     <option value="id">ID</option>
     <option value="nombre">NOMBRE</option>
     <option value="email">EMAIL</option>
     <option value="materia">MATERIA</option>
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
-
-<form action = "buscar_usuario_.php" method= "get" class="form_search"> 
-
-<input type="text" name = "busqueda" id ="busqueda" placehoder = "buscar" required>
-<select class= "cuadro" name=tipo required>
-    <option select hidden value="">DATO</option>
+    
+    <input type="text" name = "busqueda2" id ="busqueda2" placehoder = "buscar" required>
+<select class= "cuadro" name=tipo2 required>
+    <option select hidden value="">DATO 2</option>
     <option value="id">ID</option>
     <option value="nombre">NOMBRE</option>
     <option value="email">EMAIL</option>
@@ -35,6 +33,8 @@ $usuarios = "SELECT materia from usuario";
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
 <input type="submit" value = "BUSCAR" class = "btn_search">
+<form action = "buscar_usuario2_.php" method= "get" class="form_search"> 
+
         </form>
         <div id="tabla">
      

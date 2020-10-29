@@ -58,11 +58,10 @@ select[class = "cuadro"] {
   background: #401731;
   padding: 6px 15px;
   box-sizing: border-box;
-  
   color: #D92378;
 }
 input[type = "text"]{
-  
+  padding-left: 10px;
   color: #D92378;
   border-radius: 5px;
   background: #401731;
@@ -93,7 +92,7 @@ input[type = "submit"]:hover{
 .form_search{
 
  display: flex;
- float: right;
+ float: left;
  background: initial;
  
  padding: 10px;
