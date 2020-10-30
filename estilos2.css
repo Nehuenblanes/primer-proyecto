@@ -8,6 +8,7 @@
         color: #D92378;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
    #tabla{
     text-align: center;
      margin: 5% auto;
@@ -29,6 +30,7 @@ table{
     thead{
       background-color: #401731;;
       color: #8C2048;
+      text-align: center;
     }
     tr:nth-child(even){
  background-color: #D92378;
