@@ -24,6 +24,7 @@ $i=0;
     <option value="materia">MATERIA</option>
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
+    <option value="password">CONTRASEÑA</option>
 <input type="submit" value = "BUSCAR" class = "btn_search">
 
         </form>
@@ -31,14 +32,14 @@ $i=0;
         <div id="tabla">
         <?php  echo 'DATO A BUSCAR: '.$busqueda .' EN: '.$dato; ?>
         <table>     
-<thead><td>ID</td>      <td>NOMBRE</td>    <td>EMAIL</td>      <td>GENERO</td>     <td>MATERIA</td>        <td>TELEFONO</td></thead>
+<thead><td>ID</td>      <td>NOMBRE</td> <td>PASSWORD</td>   <td>EMAIL</td>      <td>GENERO</td>     <td>MATERIA</td>        <td>TELEFONO</td></thead>
 <?php
 $result = mysqli_query($conexion,$usuarios);
  
 while ($row=mysqli_fetch_assoc($result)) {
     $i++;
 ?>
-<tr><td><?php echo $row['id']?></td><td><?php echo $row['nombre']?></td><td><?php echo $row['email']?></td><td><?php echo $row['genero']?></td><td><?php echo $row['materia']?></td><td><?php echo $row['telefono']?></td></tr>
+<tr><td><?php echo $row['id']?></td><td><?php echo $row['nombre']?></td><td><?php echo $row['password']?></td> <td><?php echo $row['email']?></td><td><?php echo $row['genero']?></td><td><?php echo $row['materia']?></td><td><?php echo $row['telefono']?></td></tr>
 
 <?php } mysqli_free_result($result); ?>
 

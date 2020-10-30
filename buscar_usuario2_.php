@@ -12,7 +12,7 @@ $i=0;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO</title>
+    <title>BUSQUEDA</title>
     <link rel="stylesheet" href="estilos2.css">
     <body>
         <h1>RESULTADOS</h1>
@@ -26,6 +26,7 @@ $i=0;
     <option value="materia">MATERIA</option>
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
+    <option value="password">CONTRASEÑA</option>
     <input type="text" name = "busqueda2" id ="busqueda2" placehoder = "buscar" value = "<?php echo $busqueda2; ?>" required>
 <select class= "cuadro" name=tipo2 required>
     <option select hidden value=""><?php echo  $dato2; ?></option>
@@ -35,6 +36,7 @@ $i=0;
     <option value="materia">MATERIA</option>
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
+    <option value="password">CONTRASEÑA</option>
 <input type="submit" value = "BUSCAR" class = "btn_search">
 
         </form>
@@ -42,14 +44,14 @@ $i=0;
         <div id="tabla">
         <?php  echo 'DATOS A BUSCAR: '.$busqueda .' EN: '.$dato .' Y: '.$busqueda2 .' EN: '.$dato2;  ?>
         <table>     
-<thead><td>ID</td>      <td>NOMBRE</td>    <td>EMAIL</td>      <td>GENERO</td>     <td>MATERIA</td>        <td>TELEFONO</td></thead>
+<thead><td>ID</td>      <td>NOMBRE</td>  <td>CONTRASEÑA</td>   <td>EMAIL</td>      <td>GENERO</td>     <td>MATERIA</td>        <td>TELEFONO</td></thead>
 <?php
 $result = mysqli_query($conexion,$usuarios);
  
 while ($row=mysqli_fetch_assoc($result)) {
     $i++;
 ?>
-<tr><td><?php echo $row['id']?></td><td><?php echo $row['nombre']?></td><td><?php echo $row['email']?></td><td><?php echo $row['genero']?></td><td><?php echo $row['materia']?></td><td><?php echo $row['telefono']?></td></tr>
+<tr><td><?php echo $row['id']?></td><td><?php echo $row['nombre']?></td><td><?php echo $row['password']?></td> <td><?php echo $row['email']?></td><td><?php echo $row['genero']?></td><td><?php echo $row['materia']?></td><td><?php echo $row['telefono']?></td></tr>
 
 <?php } mysqli_free_result($result); ?>
 

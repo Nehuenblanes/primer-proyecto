@@ -7,10 +7,10 @@ $usuarios = "SELECT materia from usuario";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO</title>
+    <title>BUSQUEDA</title>
     <link rel="stylesheet" href="estilos2.css">
     <body>
-        <h1>RESULTADOS</h1>
+        <h1>BUSQUEDA</h1>
         <form action = "buscar_usuario_.php" method= "get" class="form_search"> 
 <input type="text" name = "busqueda" id ="busqueda" placehoder = "buscar" required>
 <select class= "cuadro" name=tipo required>
@@ -21,6 +21,7 @@ $usuarios = "SELECT materia from usuario";
     <option value="materia">MATERIA</option>
     <option value="telefono">TELEFONO</option>
     <option value="genero">GENERO</option>
+    <option value="password">CONTRASEÑA</option>
 <input type="submit" value = "BUSCAR" class = "btn_search">
 
         </form>
